@@ -36,7 +36,7 @@ class App extends Component {
       const member = {...this.state.member};
       member.id = this.drone.clientId;
       this.setState({member});
-    });
+    });  
     const room = this.drone.subscribe("observable-room");
     room.on('data', (data, member) => {
       const messages = this.state.messages;
@@ -44,6 +44,7 @@ class App extends Component {
       this.setState({messages});
     });
   }
+
   onSendMessage = (message) => {
     this.drone.publish({
       room: "observable-room",
