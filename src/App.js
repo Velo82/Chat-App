@@ -65,6 +65,7 @@ class App extends Component {
         onSendMessage={this.onSendMessage}
       />
       </div>
+      
     );
   }
 }

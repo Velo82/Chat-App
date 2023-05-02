@@ -12,11 +12,11 @@ class Messages extends Component {
           <li className={className} key = {i}>
             <span
               className="avatar"
-              style={{backgroundColor: member.color}}
+              style={{backgroundColor: member.clientData.color}}
             />
             <div className="Message-content">
               <div className="username">
-                {member.username}
+                {member.clientData.username}
               </div>
               <div className="text">{text}</div>
             </div>
